@@ -1,0 +1,132 @@
+/* Overlay style */
+.menu-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,3,0.85);
+  z-index:99999;
+}
+
+/* Overlay closing cross */
+.menu-overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.menu-overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.menu-overlay ul {
+	list-style: none;
+	padding-top: calc(25% / 10);
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.menu-overlay ul li {
+	display: block;
+	height: calc(100% / 8);
+	min-height: 50px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.menu-overlay ul li a {
+	font-size: 20px;
+  line-height: 24px;
+	font-weight: 600;
+  font-style:normal;
+  text-transform:uppercase;
+	display: block;
+	color: #595e64;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.menu-overlay ul li a:hover,
+.menu-overlay ul li a:focus {
+	color: #8a8e94;
+}
+
+.menu-overlay ul li.selected a {
+	color: #fff;
+}
+
+#trigger-overlay {
+  float:right;
+  background:transparent;
+  border:0px;
+  padding:0px;
+  margin:0px;
+}
+
+#trigger-overlay i {
+  color:#fff;
+  background:rgba(230,230,255,0);
+  font-size:21px;
+  line-height:60px;
+  width:60px;
+  height:60px;
+  text-align:center;
+  margin-top:8px;
+  border:1px solid #fff;
+  -webkit-border-radius: 50%; 
+     -moz-border-radius: 50%; 
+       -o-border-radius: 50%;  
+          border-radius: 50%; 
+}
+
+#trigger-overlay i:hover {
+  background:rgba(230,230,255,0.1);
+}
+
+/* Effects */
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+@media screen and (max-height: 30.5em) {
+
+	.menu-overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.menu-overlay ul li {
+		min-height: 34px;
+	}
+}

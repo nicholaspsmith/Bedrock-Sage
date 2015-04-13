@@ -1,0 +1,40 @@
+.typcn_list_block .typcn_list {
+	height: 200px;
+	overflow: auto;
+	clear: both;
+}
+.typcn_list_block .typcn_list span {
+	display: none;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+}
+.typcn_list_block .typcn_list span.active {
+	display: inline-block;
+}
+.typcn_list_block .typcn_list span:hover, .typcn_list_block .typcn_list span.selected {
+	border: 1px solid #000;
+	width: 38px;
+	line-height: 38px;
+}
+.typcn_list_block .actual-icon {
+	float: left;
+	width: 30%;
+}
+.typcn_list_block .actual-icon span {
+	display: inline-block;
+	width: 48px;
+	line-height: 48px;
+	height: 48px;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 20px;
+	border: 1px solid #000;
+}
+.typcn_list_block .searchinput {
+	float: right;
+	width: 70%;
+	margin-top: 8px;
+}

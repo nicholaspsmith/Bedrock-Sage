@@ -1,0 +1,114 @@
+.wpb_content_element, ul.wpb_thumbnails-fluid > li, .last_toggle_el_margin, .wpb_button {
+  margin-bottom: 0px!important;
+}
+.wpb_row {
+
+  margin-bottom: 0!important;
+}
+.container.relative {
+  position: relative;
+}
+.full-width-row {
+  position: relative;
+  overflow: hidden;
+}
+.full-width-row .wpb_row {
+  max-width: 1170px;
+  margin: 0 auto;
+ 
+}
+.full-width-row > .col-md-12 {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+.wpb_gmaps_widget .wpb_wrapper {
+  padding: 0!important;
+}
+.row.vertical-padding, .full-width-row.vertical-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.wpb_text_column h4:last-child, .wpb_text_column h1:last-child, .wpb_text_column h2:last-child, .wpb_text_column h3:last-child {
+  margin-bottom: 10px;
+}
+.wpb_content_element .wpb_tabs_nav li {
+  background-color: #e9eaef!important;
+  padding: 10px 14px!important;
+  border: 1px solid #e9ecef;
+  border-right: none!important;
+  
+  margin-right: 0!important;
+}
+.wpb_content_element .wpb_tabs_nav li:last-child {
+  border-right: 1px solid #e9ecef!important;
+}
+.wpb_content_element .wpb_tabs_nav li.ui-tabs-active, .wpb_content_element .wpb_tabs_nav li:hover {
+  background-color: #fff!important;
+  
+}
+.wpb_content_element .wpb_tabs_nav li.ui-tabs-active {
+  border-bottom: none;
+}
+.wpb_content_element.wpb_tabs .wpb_tour_tabs_wrapper .wpb_tab {
+  background-color: #fff!important;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: 1px solid #e9ecef;
+  position: relative;
+  top: -2px;
+  z-index: 1;
+}
+.wpb_content_element .wpb_tabs_nav {
+  position: relative;
+  z-index: 2;
+}
+
+.wpb_column:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+  top: 0!important;
+}
+.panel-group .panel-heading {
+  background: #e9eaef;
+  color: #999999;
+  padding: 15px 20px!important;
+  line-height: 30px;
+}
+.panel-group .panel-heading h4 {
+  color: #999999;
+  font-size: 14px;
+  text-align: left;
+}
+.panel-group .panel-heading h4 a {
+  font-size: 14px;
+  display: block;
+}
+.panel-body {
+  padding: 40px;
+}
+.flip-box-wrap .ifb-jq-height .ifb-back p {
+  color: inherit!important;
+}
+.flip-box-wrap h3, .flip-box-wrap p {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .wpb_row .wpb_column {
+    margin-bottom: 0!important;
+  }
+  .upb_row_bg {
+    background-size: initial!important;
+  }
+
+}
